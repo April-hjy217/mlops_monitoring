@@ -1,0 +1,63 @@
+{
+  "name": "NYC Taxi Data Quality Project",
+  "panels": [
+    {
+      "type": "evidently:dashboard_panel:DashboardPanelCounter",
+      "id": "01980e01-de22-74b8-8495-9337fb055b92",
+      "title": "NYC taxi data dashboard",
+      "filter": {
+        "metadata_values": {},
+        "tag_values": [],
+        "include_test_suites": false
+      },
+      "size": 2,
+      "agg": "none",
+      "value": null,
+      "text": null
+    },
+    {
+      "type": "evidently:dashboard_panel:DashboardPanelPlot",
+      "id": "01980e01-de23-707a-ab53-87d57326ef3a",
+      "title": "Inference Count",
+      "filter": {
+        "metadata_values": {},
+        "tag_values": [],
+        "include_test_suites": false
+      },
+      "size": 1,
+      "values": [
+        {
+          "field_path": "current.number_of_rows",
+          "metric_id": "DatasetSummaryMetric",
+          "metric_fingerprint": null,
+          "metric_args": {},
+          "legend": "count"
+        }
+      ],
+      "plot_type": "bar"
+    },
+    {
+      "type": "evidently:dashboard_panel:DashboardPanelPlot",
+      "id": "01980e01-de24-7183-8070-3cef0ea38bda",
+      "title": "Number of Missing Values",
+      "filter": {
+        "metadata_values": {},
+        "tag_values": [],
+        "include_test_suites": false
+      },
+      "size": 1,
+      "values": [
+        {
+          "field_path": "current.number_of_missing_values",
+          "metric_id": "DatasetSummaryMetric",
+          "metric_fingerprint": null,
+          "metric_args": {},
+          "legend": "count"
+        }
+      ],
+      "plot_type": "line"
+    }
+  ],
+  "tabs": [],
+  "tab_id_to_panel_ids": {}
+}

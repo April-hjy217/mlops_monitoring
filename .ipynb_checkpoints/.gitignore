@@ -1,0 +1,8 @@
+data/green_tripdata_*.parquet
+
+.ipynb_checkpoints/
+
+workspace/
+
+__pycache__/
+*.py[cod]
